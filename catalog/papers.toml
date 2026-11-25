@@ -1,0 +1,330 @@
+# The papers of this hub, one [[paper]] per repository to be, grouped by family: the algebraic
+# statistics of phylogenetic models, their invariants, and the identifiability of their trees and
+# parameters.
+#
+# Started on 2026-11-25 from the maintainer's division of the collection into hubs of inference and
+# hubs of theory. Authors, years, titles and links were checked against Crossref. Each formalization
+# records the exact citation in its Phase 0, and corrects the entry here.
+#
+# Fields of a paper:
+#   id          the repository is lean4-<id>: the method's name in lower case when the paper names
+#               one, otherwise first author and year, with a keyword when two papers would share it
+#   family      the [[family]] it belongs to (each paper is in exactly one)
+#   order       its place in the family, by priority
+#   short       the method's name, when it has one
+#   kind        "theory" (an identifiability or characterization theorem), "theory+algorithm",
+#               or "method"
+#   root        the Lean package, the root of its code and, by default, the paper's name: the
+#               method's name, otherwise first author and year (lean4-phylogenetics'
+#               docs/CONVENTIONS.md, Section 2)
+#   paper       optional: the paper's name, when it is not the root (CONVENTIONS, Section 2)
+#   status      "todo", "partial" (some results are formalized elsewhere: see covered_by),
+#               "in-progress" (its repository exists), or "formalized"
+#   repo        only when the repository is not named lean4-<id>, as for papers on one topic that
+#               share a repository (CONVENTIONS, Section 3)
+#   commit      for a formalized paper: the commit that other repositories require
+#   uses        other hubs whose library its formalization requires, besides this one
+#   builds_on   ids of papers, of any hub's catalog, whose results its proofs use. Only what is known
+#               before the paper's inventory; its Phase 1 completes the list here
+#   covered_by  what is already formalized, and where
+#   note        anything else
+
+[[family]]
+id = 1
+title = "Phylogenetic invariants and Fourier methods"
+priority = "highest"
+
+[[family]]
+id = 2
+title = "Topological and parametric identifiability"
+priority = "highest"
+
+[[family]]
+id = 3
+title = "Mixture models and nonidentifiability"
+
+[[family]]
+id = 4
+title = "Spectral and algebraic reconstruction algorithms"
+priority = "highest"
+
+# ---------------------------------------------------------------------------------------------
+# 1. Phylogenetic invariants and Fourier methods
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "lake1987"
+family = 1
+order = 1
+authors = "Lake"
+year = "1987"
+title = "A Rate-Independent Technique for Analysis of Nucleic Acid Sequences: Evolutionary Parsimony"
+url = "https://doi.org/10.1093/oxfordjournals.molbev.a040433"
+kind = "theory+algorithm"
+root = "Lake1987"
+status = "todo"
+
+[[paper]]
+id = "cavender1987"
+family = 1
+order = 2
+authors = "Cavender, Felsenstein"
+year = "1987"
+title = "Invariants of Phylogenies in a Simple Case with Discrete States"
+url = "https://doi.org/10.1007/BF01890075"
+kind = "theory"
+root = "Cavender1987"
+status = "todo"
+
+[[paper]]
+id = "evans1993"
+family = 1
+order = 3
+authors = "Evans, Speed"
+year = "1993"
+title = "Invariants of Some Probability Models Used in Phylogenetic Inference"
+url = "https://doi.org/10.1214/aos/1176349030"
+kind = "theory"
+root = "Evans1993"
+status = "todo"
+
+[[paper]]
+id = "szekely1993"
+family = 1
+order = 4
+authors = "Székely, Steel, Erdős"
+year = "1993"
+title = "Fourier Calculus on Evolutionary Trees"
+url = "https://doi.org/10.1006/aama.1993.1011"
+kind = "theory"
+root = "Szekely1993"
+status = "todo"
+
+[[paper]]
+id = "hendy1993"
+family = 1
+order = 5
+authors = "Hendy, Penny"
+year = "1993"
+title = "Spectral Analysis of Phylogenetic Data"
+url = "https://doi.org/10.1007/BF02638451"
+kind = "theory+algorithm"
+root = "Hendy1993"
+status = "todo"
+
+[[paper]]
+id = "allman2003"
+family = 1
+order = 6
+authors = "Allman, Rhodes"
+year = "2003"
+title = "Phylogenetic Invariants for the General Markov Model of Sequence Mutation"
+url = "https://doi.org/10.1016/j.mbs.2003.08.004"
+kind = "theory"
+root = "Allman2003"
+status = "todo"
+
+[[paper]]
+id = "allman2008-ideals"
+family = 1
+order = 7
+authors = "Allman, Rhodes"
+year = "2008"
+title = "Phylogenetic Ideals and Varieties for the General Markov Model"
+url = "https://doi.org/10.1016/j.aam.2006.10.002"
+kind = "theory"
+root = "Allman2008Ideals"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 2. Topological and parametric identifiability
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "steel1994"
+family = 2
+order = 1
+authors = "Steel"
+year = "1994"
+title = "Recovering a Tree from the Leaf Colourations It Generates Under a Markov Model"
+url = "https://doi.org/10.1016/0893-9659(94)90024-8"
+kind = "theory"
+root = "Steel1994"
+status = "todo"
+
+[[paper]]
+id = "chang1996"
+family = 2
+order = 2
+authors = "Chang"
+year = "1996"
+title = "Full Reconstruction of Markov Models on Evolutionary Trees: Identifiability and Consistency"
+url = "https://doi.org/10.1016/S0025-5564(96)00075-2"
+kind = "theory"
+root = "Chang1996"
+status = "todo"
+
+[[paper]]
+id = "allman2004"
+family = 2
+order = 3
+authors = "Allman, Rhodes"
+year = "2004"
+title = "Quartets and Parameter Recovery for the General Markov Model of Sequence Mutation"
+url = "https://doi.org/10.1155/S1687120004020283"
+kind = "theory"
+root = "Allman2004"
+status = "todo"
+
+[[paper]]
+id = "allman2006"
+family = 2
+order = 4
+authors = "Allman, Rhodes"
+year = "2006"
+title = "The Identifiability of Tree Topology for Phylogenetic Models, Including Covarion and Mixture Models"
+url = "https://doi.org/10.1089/cmb.2006.13.1101"
+kind = "theory"
+root = "Allman2006"
+status = "todo"
+
+[[paper]]
+id = "allman2008"
+family = 2
+order = 5
+authors = "Allman, Rhodes"
+year = "2008"
+title = "Identifying Evolutionary Trees and Substitution Parameters for the General Markov Model with Invariable Sites"
+url = "https://doi.org/10.1016/j.mbs.2007.09.001"
+kind = "theory"
+root = "Allman2008"
+status = "todo"
+
+[[paper]]
+id = "allman2008-gamma"
+family = 2
+order = 6
+authors = "Allman, Ané, Rhodes"
+year = "2008"
+title = "Identifiability of a Markovian Model of Molecular Evolution with Gamma-Distributed Rates"
+url = "https://doi.org/10.1239/aap/1208358894"
+kind = "theory"
+root = "Allman2008Gamma"
+status = "todo"
+
+[[paper]]
+id = "xue2026"
+family = 2
+order = 7
+authors = "Xue, Legried, Fan"
+year = "2026"
+title = "Joint Identifiability of Ancestral Sequence, Phylogeny, and Mutation Rates Under an Indel Model"
+url = "https://doi.org/10.1177/15578666261504447"
+kind = "theory+algorithm"
+root = "Xue2026"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 3. Mixture models and nonidentifiability
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "matsen2007"
+family = 3
+order = 1
+authors = "Matsen, Steel"
+year = "2007"
+title = "Phylogenetic Mixtures on a Single Tree Can Mimic a Tree of Another Topology"
+url = "https://doi.org/10.1080/10635150701627304"
+kind = "theory"
+root = "Matsen2007"
+status = "todo"
+
+[[paper]]
+id = "stefankovic2007"
+family = 3
+order = 2
+authors = "Štefankovič, Vigoda"
+year = "2007"
+title = "Phylogeny of Mixture Models: Robustness of Maximum Likelihood and Non-Identifiable Distributions"
+url = "https://doi.org/10.1089/cmb.2006.0126"
+kind = "theory"
+root = "Stefankovic2007"
+status = "todo"
+
+[[paper]]
+id = "allman2011-mixtures"
+family = 3
+order = 3
+authors = "Allman et al."
+year = "2011"
+title = "Identifiability of Two-Tree Mixtures for Group-Based Models"
+url = "https://doi.org/10.1109/TCBB.2010.79"
+kind = "theory"
+root = "Allman2011Mixtures"
+status = "todo"
+
+[[paper]]
+id = "rhodes2012"
+family = 3
+order = 4
+authors = "Rhodes, Sullivant"
+year = "2012"
+title = "Identifiability of Large Phylogenetic Mixture Models"
+url = "https://doi.org/10.1007/s11538-011-9672-2"
+kind = "theory"
+root = "Rhodes2012"
+status = "todo"
+
+[[paper]]
+id = "allman2012"
+family = 3
+order = 5
+authors = "Allman, Rhodes, Sullivant"
+year = "2012"
+title = "When Do Phylogenetic Mixture Models Mimic Other Phylogenetic Models?"
+url = "https://doi.org/10.1093/sysbio/sys064"
+kind = "theory"
+root = "Allman2012"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 4. Spectral and algebraic reconstruction algorithms
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "eriksson2005"
+family = 4
+order = 1
+authors = "Eriksson"
+year = "2005"
+title = "Tree Construction Using Singular Value Decomposition"
+url = "https://doi.org/10.1017/CBO9780511610684.023"
+kind = "theory+algorithm"
+root = "Eriksson2005"
+status = "todo"
+
+[[paper]]
+id = "casanellas2007"
+family = 4
+order = 2
+authors = "Casanellas, Fernández-Sánchez"
+year = "2007"
+title = "Performance of a New Invariants Method on Homogeneous and Nonhomogeneous Quartet Trees"
+url = "https://doi.org/10.1093/molbev/msl153"
+kind = "method"
+root = "Casanellas2007"
+status = "todo"
+
+[[paper]]
+id = "fernandezsanchez2016"
+family = 4
+order = 3
+authors = "Fernández-Sánchez, Casanellas"
+year = "2016"
+title = "Invariant Versus Classical Quartet Inference When Evolution Is Heterogeneous Across Sites and Lineages"
+url = "https://doi.org/10.1093/sysbio/syv086"
+kind = "theory+algorithm"
+root = "FernandezSanchez2016"
+status = "todo"
+builds_on = ["casanellas2007"]
